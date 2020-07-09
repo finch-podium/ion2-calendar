@@ -5,12 +5,12 @@
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
-    "preapre": "npm run build",
+    "prepare": "npm run build",
     "start": "cd ./dev && npm start",
     "clean:dist": "rm -rf dist",
     "demo:link": "npm link && cd ./demo && npm link ion2-calendar",
     "demo:serve": "cd ./demo && ionic serve",
-    "build": "run-s build:copy-sources build:compile-scss build:ts",
+    "build": "run-s build:ts",
     "build:ts": "tsc && ngc",
     "build:copy-sources": "gulp copy-sources",
     "build:compile-scss": "gulp copy-scss && gulp rename-scss && gulp clean-scss",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/HsuanXyz/ion2-calendar.git"
+    "url": "https://github.com/finch-podium/ion2-calendar.git"
   },
   "devDependencies": {
     "@angular/common": "7.1.4",
@@ -39,6 +39,7 @@
     "gulp-ext-replace": "^0.3.0",
     "gulp-sass": "^4.0.1",
     "moment": "^2.23.0",
+    "natives": "^1.1.6",
     "ng-packagr": "^2.0.0",
     "npm-run-all": "^4.1.2",
     "rxjs": "6.3.3",

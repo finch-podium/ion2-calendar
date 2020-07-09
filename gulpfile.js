@@ -23,22 +23,22 @@ function bumpVersions(options) {
     .pipe(gulp.dest('./'));
 }
 
-function copySources() {
+async function copySources() {
   gulp.src(`${paths.dve}/**/*`).pipe(gulp.dest(paths.src));
 }
 
-function copyScss() {
+async function copyScss() {
   return gulp
     .src(`${paths.dve}/**/*.scss`)
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(paths.src));
 }
 
-function cleanScss() {
+async function cleanScss() {
   return gulp.src(`${paths.src}/**/*.css`, { read: false }).pipe(clean());
 }
 
-function renameCss() {
+async function renameCss() {
   return gulp
     .src(`${paths.src}/**/*.css`)
     .pipe(ext_replace('.scss'))
