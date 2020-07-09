@@ -23,6 +23,7 @@
     "rewriteTsconfig": false
   },
   "angularCompilerOptions": {
+    "disableTypeScriptVersionCheck": true,
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true,
     "enableResourceInlining": true,
