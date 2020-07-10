@@ -30,8 +30,10 @@ export const MONTH_VALUE_ACCESSOR: any = {
                         [class.on-selected]="isSelected(day.time)"
                         [disabled]="day.disable"
                         [attr.aria-label]="getDayLabel(day) | date:DAY_DATE_FORMAT">
-                  <p>{{ day.title }}</p>
-                  <small *ngIf="day.subTitle">{{ day?.subTitle }}</small>
+                        <div id="hc1" class="shapeborder">
+                        <p>{{ day.title }}</p>
+                        <small *ngIf="day.subTitle">{{ day?.subTitle }}</small>
+                      </div>       
                 </button>
               </ng-container>
             </div>
@@ -60,8 +62,10 @@ export const MONTH_VALUE_ACCESSOR: any = {
                         [class.is-last]="day.isLast"
                         [class.on-selected]="isSelected(day.time)"
                         [disabled]="day.disable">
-                  <p>{{ day.title }}</p>
-                  <small *ngIf="day.subTitle">{{ day?.subTitle }}</small>
+                        <div id="hc1" class="shapeborder">
+                        <p>{{ day.title }}</p>
+                        <small *ngIf="day.subTitle">{{ day?.subTitle }}</small>
+                      </div>         
                 </button>
               </ng-container>
 
@@ -192,6 +196,7 @@ export class MonthComponent implements ControlValueAccessor, AfterViewInit {
   }
 
   onSelected(item: CalendarDay): void {
+    console.log(`[PodiumCalendar]: Day selected`, {item, pick: this.pickMode, readonly: this.readonly});
     if (this.readonly) return;
     item.selected = true;
     this.select.emit(item);

@@ -1,6 +1,35 @@
 :host {
   display: inline-block;
   width: 100%; }
+  :host .shapeborder {
+    background: #fff;
+    height: var(--size);
+    width: var(--size);
+    border: var(--border) solid;
+    border-radius: 50%;
+    border-color: orange red blue green;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  :host #hc1 {
+    --size: 100%;
+    --border: 4px; }
+  :host .inner {
+    background-color: yellow;
+    top: 3%;
+    left: 3%;
+    width: 94%;
+    height: 94%;
+    position: relative; }
+  :host .day-circle {
+    background-color: orange;
+    top: 8%;
+    left: 8%;
+    width: 85%;
+    height: 85%;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50%; }
   :host .days-box {
     padding: 0.5rem; }
   :host .days:nth-of-type(7n),
@@ -71,7 +100,7 @@
     :host .primary .startSelection:before, :host .primary .startSelection:after {
       height: 36px;
       width: 50%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -86,7 +115,7 @@
     :host .primary .endSelection:before, :host .primary .endSelection:after {
       height: 36px;
       width: 50%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -108,7 +137,7 @@
     :host .primary .between button.days-btn:after {
       height: 36px;
       width: 100%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -190,7 +219,7 @@
     :host .secondary .startSelection:before, :host .secondary .startSelection:after {
       height: 36px;
       width: 50%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -205,7 +234,7 @@
     :host .secondary .endSelection:before, :host .secondary .endSelection:after {
       height: 36px;
       width: 50%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -227,7 +256,7 @@
     :host .secondary .between button.days-btn:after {
       height: 36px;
       width: 100%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -309,7 +338,7 @@
     :host .danger .startSelection:before, :host .danger .startSelection:after {
       height: 36px;
       width: 50%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -324,7 +353,7 @@
     :host .danger .endSelection:before, :host .danger .endSelection:after {
       height: 36px;
       width: 50%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -346,7 +375,7 @@
     :host .danger .between button.days-btn:after {
       height: 36px;
       width: 100%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -428,7 +457,7 @@
     :host .dark .startSelection:before, :host .dark .startSelection:after {
       height: 36px;
       width: 50%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -443,7 +472,7 @@
     :host .dark .endSelection:before, :host .dark .endSelection:after {
       height: 36px;
       width: 50%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -465,7 +494,7 @@
     :host .dark .between button.days-btn:after {
       height: 36px;
       width: 100%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -547,7 +576,7 @@
     :host .light .startSelection:before, :host .light .startSelection:after {
       height: 36px;
       width: 50%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -562,7 +591,7 @@
     :host .light .endSelection:before, :host .light .endSelection:after {
       height: 36px;
       width: 50%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -584,7 +613,7 @@
     :host .light .between button.days-btn:after {
       height: 36px;
       width: 100%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -663,7 +692,7 @@
     :host .cal-color .startSelection:before, :host .cal-color .startSelection:after {
       height: 36px;
       width: 50%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -676,7 +705,7 @@
     :host .cal-color .endSelection:before, :host .cal-color .endSelection:after {
       height: 36px;
       width: 50%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -695,7 +724,7 @@
     :host .cal-color .between button.days-btn:after {
       height: 36px;
       width: 100%;
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
