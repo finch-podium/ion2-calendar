@@ -197,16 +197,21 @@ export class MonthComponent implements ControlValueAccessor, AfterViewInit {
 
   onSelected(item: CalendarDay): void {
     console.log(`[PodiumCalendar]: Day selected`, {item, pick: this.pickMode, readonly: this.readonly});
+
     if (this.readonly) return;
+
     item.selected = true;
     this.select.emit(item);
+
     if (this.pickMode === pickModes.SINGLE) {
+      console.log(`[PodiumCalendar]: Single pick mode, emitting item as single array`, {date: this._date, emitter: this.change });
       this._date[0] = item;
       this.change.emit(this._date);
       return;
     }
 
     if (this.pickMode === pickModes.RANGE) {
+      console.log(`[PodiumCalendar]: Range pick mode, emitting item as single array`, {date: this._date, emitter: this.change });
       if (this._date[0] === null) {
         this._date[0] = item;
         this.selectStart.emit(item);
