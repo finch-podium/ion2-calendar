@@ -12,7 +12,7 @@ import {
 import { defaults, pickModes } from '../config';
 import { DEFAULT_CALENDAR_OPTIONS } from './calendar-options.provider';
 
-const isBoolean = (input: any) => input === true || input === false;
+const isBool = (input: any) => input === true || input === false;
 
 @Injectable()
 export class CalendarService {
@@ -139,7 +139,7 @@ export class CalendarService {
 
     let _disable = false;
 
-    if (dayConfig && isBoolean(dayConfig.disable)) {
+    if (dayConfig && isBool(dayConfig.disable)) {
       _disable = dayConfig.disable;
     } else {
       _disable = disableWee || isBetween;
