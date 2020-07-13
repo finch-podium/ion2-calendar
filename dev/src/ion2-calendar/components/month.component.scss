@@ -226,25 +226,25 @@ $disabled-color: rgba(0, 0, 0, 0.25);
 
   
   .podium-activity-count-1{
-    border-color: var(--activity-color-1);
+    border-color: var(--activity-color-1)!important;
   }
   .podium-activity-count-2{
-    border-top-color: var(--activity-color-1);
-    border-bottom-color: var(--activity-color-2);
+    border-top-color: var(--activity-color-1)!important;
+    border-bottom-color: var(--activity-color-2)!important;
   }
   .podium-activity-count-3{
-    border-left-color: var(--activity-color-3);
-    border-right-color: var(--activity-color-3);
+    border-left-color: var(--activity-color-3)!important;
+    border-right-color: var(--activity-color-3)!important;
 
-    border-top-color: var(--activity-color-1);
-    border-bottom-color: var(--activity-color-2);
+    border-top-color: var(--activity-color-1)!important;
+    border-bottom-color: var(--activity-color-2)!important;
   }
   .podium-activity-count-4{
-    border-left-color: var(--activity-color-1);
-    border-right-color: var(--activity-color-2);
+    border-left-color: var(--activity-color-1)!important;
+    border-right-color: var(--activity-color-2)!important;
     
-    border-top-color: var(--activity-color-3);
-    border-bottom-color: var(--activity-color-4);
+    border-top-color: var(--activity-color-3)!important;
+    border-bottom-color: var(--activity-color-4)!important;
   }
 
   .inner {
