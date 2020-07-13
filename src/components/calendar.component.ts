@@ -239,6 +239,7 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
   }
 
   onChanged($event: CalendarDay[]): void {
+    console.info(`[PodiumCalendar]: Calendar component onChanged fired`, $event);
     switch (this._d.pickMode) {
       case pickModes.SINGLE:
         const date = this._handleType($event[0].time);
