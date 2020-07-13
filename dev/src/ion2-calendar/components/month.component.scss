@@ -198,9 +198,12 @@ $disabled-color: rgba(0, 0, 0, 0.25);
   }
 }
 
+
+
 :host {
   display: inline-block;
   width: 100%;
+  --activity-color-default: default(transparent);
   --activity-color-1: default(#c3c3c3);
   --activity-color-2: default(#c3c3c3);
   --activity-color-3: default(#c3c3c3);
