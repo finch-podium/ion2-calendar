@@ -30,7 +30,7 @@ export const MONTH_VALUE_ACCESSOR: any = {
                         [class.on-selected]="isSelected(day.time)"
                         [disabled]="day.disable"
                         [attr.aria-label]="getDayLabel(day) | date:DAY_DATE_FORMAT">
-                        <div id="hc1" class="shapeborder">
+                        <div class="tag-border" [ngClass]="getDayTags(day)">
                         <p>{{ day.title }}</p>
                         <small *ngIf="day.subTitle">{{ day?.subTitle }}</small>
                       </div>       
@@ -62,7 +62,9 @@ export const MONTH_VALUE_ACCESSOR: any = {
                         [class.is-last]="day.isLast"
                         [class.on-selected]="isSelected(day.time)"
                         [disabled]="day.disable">
-                        <div id="hc1" class="shapeborder">
+                        <div 
+                        class="tag-border"
+                        [ngClass]="getDayTags(day)">
                         <p>{{ day.title }}</p>
                         <small *ngIf="day.subTitle">{{ day?.subTitle }}</small>
                       </div>         
@@ -151,6 +153,10 @@ export class MonthComponent implements ControlValueAccessor, AfterViewInit {
     return new Date(day.time);
   }
 
+  getDayTags(day: any){
+    return (day.tags || []).join(' day-tag-');
+  }
+
   isBetween(day: CalendarDay): boolean {
     if (!day) return false;
 
@@ -201,11 +207,8 @@ export class MonthComponent implements ControlValueAccessor, AfterViewInit {
     
     item.selected = true;
     this.select.emit(item);
-    console.log(`[PodiumCalendar]: Day selected`, {item, pick: this.pickMode, readonly: this.readonly});
-
     if (this.pickMode === pickModes.SINGLE) {
       this._date[0] = item;
-      console.log(`[PodiumCalendar]: Single pick mode, emitting item as single array`, {date: this._date, emitter: this.change });
       this.change.emit(this._date);
       return;
     }

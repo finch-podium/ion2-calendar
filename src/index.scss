@@ -1,19 +1,17 @@
 :host {
   display: inline-block;
-  width: 100%; }
-  :host .shapeborder {
-    background: #fff;
+  width: 100%;
+  --size: 100%;
+  --border: 4px; }
+  :host .tag-border {
     height: var(--size);
     width: var(--size);
     border: var(--border) solid;
+    border-color: transparent;
     border-radius: 50%;
-    border-color: orange red blue green;
     display: flex;
     align-items: center;
     justify-content: center; }
-  :host #hc1 {
-    --size: 100%;
-    --border: 4px; }
   :host .inner {
     background-color: yellow;
     top: 3%;
