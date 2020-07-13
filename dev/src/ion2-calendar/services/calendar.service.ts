@@ -171,7 +171,7 @@ export class CalendarService {
       disable: _disable,
       isFirst: date.date() === 1,
       isLast: date.date() === date.daysInMonth(),
-      activities: [].concat([], dayConfig ? dayConfig.activities : [])
+      tags: [].concat([], dayConfig ? dayConfig.tags : [])
     };
   }
 

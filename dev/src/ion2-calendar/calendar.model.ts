@@ -26,7 +26,7 @@ export interface CalendarDay {
   };
   isFirst?: boolean;
   isLast?: boolean;
-  activities: any[];
+  tags: any[];
 }
 
 export class CalendarMonth {
@@ -41,6 +41,7 @@ export interface DayConfig {
   title?: string;
   subTitle?: string;
   cssClass?: string;
+  tags: any[];
 }
 
 export interface ModalOptions {

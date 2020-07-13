@@ -20,6 +20,20 @@ export class DemoBasicComponent {
   date: string = '2018-01-01';
   options: CalendarComponentOptions = {
     from: new Date(2000, 0, 1),
+    daysConfig: [
+      {
+        date: new Date(2018, 0, 2),
+        tags: ['ride', 'skate']
+      },
+      {
+        date: new Date(2018, 0, 3),
+        tags: ['ride', 'skate', 'park']
+      },
+      {
+        date: new Date(2018, 0, 4),
+        tags: ['ride', 'skate', 'park', 'surf']
+      }
+    ]
   };
 
   constructor(public modalCtrl: ModalController) {}

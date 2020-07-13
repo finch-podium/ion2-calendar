@@ -21,7 +21,6 @@ export const MONTH_VALUE_ACCESSOR: any = {
             <div class="days">
               <ng-container *ngIf="day">
                 <button type='button'
-                        [ngClass]="['podium-activity-count-' +  (day.activities ? day.activities.length : 0), 'podium-activity-counter']"
                         [class]="'days-btn ' + day.cssClass"
                         [class.today]="day.isToday"
                         (click)="onSelected(day)"
@@ -31,7 +30,7 @@ export const MONTH_VALUE_ACCESSOR: any = {
                         [class.on-selected]="isSelected(day.time)"
                         [disabled]="day.disable"
                         [attr.aria-label]="getDayLabel(day) | date:DAY_DATE_FORMAT">
-                        <div id="hc1" class="shapeborder">
+                        <div class="tag-border" [ngClass]="getDayTags(day)">
                         <p>{{ day.title }}</p>
                         <small *ngIf="day.subTitle">{{ day?.subTitle }}</small>
                       </div>       
@@ -53,7 +52,6 @@ export const MONTH_VALUE_ACCESSOR: any = {
                  [class.between]="isBetween(day)">
               <ng-container *ngIf="day">
                 <button type='button'
-                        [ngClass]="['podium-activity-count-' +  (day.activities ? day.activities.length : 0), 'podium-activity-counter']"
                         [class]="'days-btn ' + day.cssClass"
                         [class.today]="day.isToday"
                         (click)="onSelected(day)"
@@ -64,7 +62,9 @@ export const MONTH_VALUE_ACCESSOR: any = {
                         [class.is-last]="day.isLast"
                         [class.on-selected]="isSelected(day.time)"
                         [disabled]="day.disable">
-                        <div id="hc1" class="shapeborder">
+                        <div 
+                        class="tag-border"
+                        [ngClass]="getDayTags(day)">
                         <p>{{ day.title }}</p>
                         <small *ngIf="day.subTitle">{{ day?.subTitle }}</small>
                       </div>         
@@ -151,6 +151,10 @@ export class MonthComponent implements ControlValueAccessor, AfterViewInit {
 
   getDayLabel(day: CalendarDay) {
     return new Date(day.time);
+  }
+
+  getDayTags(day: any){
+    return [].concat([], (day.tags || []).join(' day-tag-'));
   }
 
   isBetween(day: CalendarDay): boolean {
