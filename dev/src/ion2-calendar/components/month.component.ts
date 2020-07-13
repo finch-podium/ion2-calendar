@@ -154,7 +154,7 @@ export class MonthComponent implements ControlValueAccessor, AfterViewInit {
   }
 
   getDayTags(day: any){
-    return (day.tags || []).map(x => 'day-tag-' + `${x}`);
+    return (day.tags || []).map((x: string) => 'day-tag-' + `${x}`);
   }
 
   isBetween(day: CalendarDay): boolean {
