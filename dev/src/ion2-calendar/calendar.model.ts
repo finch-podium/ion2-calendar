@@ -26,6 +26,7 @@ export interface CalendarDay {
   };
   isFirst?: boolean;
   isLast?: boolean;
+  activities: any[];
 }
 
 export class CalendarMonth {

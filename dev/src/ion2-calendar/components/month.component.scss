@@ -201,14 +201,16 @@ $disabled-color: rgba(0, 0, 0, 0.25);
 :host {
   display: inline-block;
   width: 100%;
+  --activity-color-1: default(#c3c3c3);
+  --activity-color-2: default(#c3c3c3);
+  --activity-color-3: default(#c3c3c3);
+  --activity-color-4: default(#c3c3c3);
 
   .shapeborder {
-    background: #fff;
     height: var(--size);
     width: var(--size);
     border: var(--border) solid;
     border-radius: 50%;
-    border-color: orange red blue green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,6 +219,29 @@ $disabled-color: rgba(0, 0, 0, 0.25);
   #hc1 {
     --size: 100%;
     --border: 4px;
+  }
+
+  
+  .podium-activity-count-1{
+    border-color: var(--activity-color-1);
+  }
+  .podium-activity-count-2{
+    border-top-color: var(--activity-color-1);
+    border-bottom-color: var(--activity-color-2);
+  }
+  .podium-activity-count-3{
+    border-left-color: var(--activity-color-3);
+    border-right-color: var(--activity-color-3);
+
+    border-top-color: var(--activity-color-1);
+    border-bottom-color: var(--activity-color-2);
+  }
+  .podium-activity-count-4{
+    border-left-color: var(--activity-color-1);
+    border-right-color: var(--activity-color-2);
+    
+    border-top-color: var(--activity-color-3);
+    border-bottom-color: var(--activity-color-4);
   }
 
   .inner {
