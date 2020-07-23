@@ -275,6 +275,7 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
   }
 
   swipeEvent($event: any): void {
+    console.log(`[PodiumCalendar]: Swipe event detected`, $event);
     const isNext = $event.deltaX < 0;
     if (isNext && this.canNext()) {
       this.nextMonth();
