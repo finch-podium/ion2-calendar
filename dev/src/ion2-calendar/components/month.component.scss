@@ -16,7 +16,7 @@ $segmentColor: (
   three: aliceblue,
   four: orange,
   five: blue
-);
+)!default;
 
 $strokeColors: yellow, teal, red, blue;
 
@@ -212,11 +212,11 @@ $disabled-color: rgba(0, 0, 0, 0.25);
   }
 }
 
-@mixin day-circle-offsets($segments: 2) {
+@mixin day-circle-offsets($segments: 0) {
   @for $i from 1 through $segments {
     circle:nth-child(#{$i}) {
       fill: transparent;
-      stroke: nth($strokeColors, $i);
+      stroke: nth($segmentColor, $i);
       stroke-width: 0.5rem;
       stroke-dasharray: (100 / $segments) 100;
       stroke-dashoffset: -(100 / $segments) * ($i - 1);
