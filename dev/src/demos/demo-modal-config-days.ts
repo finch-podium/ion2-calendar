@@ -14,25 +14,37 @@ import { CalendarModal, CalendarModalOptions, DayConfig } from '../ion2-calendar
 export class DemoModalConfigDaysComponent {
   date: Date = new Date(2017, 0, 2);
 
-  constructor(public modalCtrl: ModalController) {}
+  constructor(public modalCtrl: ModalController) { }
 
   async openCalendar() {
     const daysConfig: DayConfig[] = [];
     for (let i = 1; i < 30; i++) {
       daysConfig.push({
         date: new Date(2017, 0, i + 1),
+        tags: [],
         subTitle: `$${i + 1}`,
+        availabilities: [],
+        sessions: [],
+        sessionHosts: []
       });
     }
     daysConfig.push({
       date: new Date(2017, 1, 1),
       disable: true,
       subTitle: 'disable',
+      tags: [],
+      availabilities: [],
+      sessions: [],
+      sessionHosts: []
     });
     daysConfig.push({
       date: new Date(2017, 0, 1),
       subTitle: "New Year's",
       cssClass: 'my-day',
+      tags:[],
+      availabilities: [],
+      sessions: [],
+      sessionHosts: []
     });
 
     const options: CalendarModalOptions = {

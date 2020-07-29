@@ -27,6 +27,9 @@ export interface CalendarDay {
   isFirst?: boolean;
   isLast?: boolean;
   tags: any[];
+  availabilities: any[],
+  sessions: any[],
+  sessionHosts: any[]
 }
 
 export class CalendarMonth {
@@ -42,6 +45,9 @@ export interface DayConfig {
   subTitle?: string;
   cssClass?: string;
   tags: any[];
+  availabilities: any[];
+  sessions: any[];
+  sessionHosts: any[];
 }
 
 export interface ModalOptions {

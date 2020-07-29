@@ -6,6 +6,20 @@ $colors: (
   dark: var(--ion-color-dark),
 );
 
+$segmentColor: (
+  ride: yellow,
+  snow: teal,
+  surf: aqua,
+  park: red,
+  one: wheat,
+  two: green,
+  three: aliceblue,
+  four: orange,
+  five: blue
+);
+
+$strokeColors: yellow, teal, red, blue;
+
 $disabled-color: rgba(0, 0, 0, 0.25);
 
 @function bindColors($color-value) {
@@ -198,13 +212,36 @@ $disabled-color: rgba(0, 0, 0, 0.25);
   }
 }
 
-
+@mixin day-circle-offsets($segments: 2) {
+  @for $i from 1 through $segments {
+    circle:nth-child(#{$i}) {
+      fill: transparent;
+      stroke: nth($strokeColors, $i);
+      stroke-width: 0.5rem;
+      stroke-dasharray: (100 / $segments) 100;
+      stroke-dashoffset: -(100 / $segments) * ($i - 1);
+    }
+  }
+}
 
 :host {
   display: inline-block;
   width: 100%;
 
+  svg {
+    width: var(--size);
+    height: var(--size);
+    background: transparent;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    position: absolute;
+  }
 
+  @for $i from 1 through 4 {
+    .segments-#{$i}{
+      @include day-circle-offsets($i);
+    }
+  }
 
   --size: 100%;
   --border: 4px;
@@ -280,6 +317,7 @@ $disabled-color: rgba(0, 0, 0, 0.25);
     font-size: 1.2em;
     color: #333;
     text-align: center;
+    position: relative;
   }
   button.days-btn[disabled] p {
     color: $disabled-color;

@@ -23,15 +23,24 @@ export class DemoBasicComponent {
     daysConfig: [
       {
         date: new Date(2018, 0, 2),
-        tags: ['ride', 'skate']
+        tags: ['ride', 'skate'],
+        availabilities: [],
+        sessions: [],
+        sessionHosts: []
       },
       {
         date: new Date(2018, 0, 3),
-        tags: ['ride', 'skate', 'park']
+        tags: ['ride', 'skate', 'park'],
+        availabilities: [],
+        sessions: [],
+        sessionHosts: []
       },
       {
         date: new Date(2018, 0, 4),
-        tags: ['ride', 'skate', 'park', 'surf']
+        tags: ['ride', 'skate', 'park', 'surf'],
+        availabilities: [],
+        sessions: [],
+        sessionHosts: []
       }
     ]
   };

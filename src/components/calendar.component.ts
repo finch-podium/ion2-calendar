@@ -35,7 +35,7 @@ export const ION_CAL_VALUE_ACCESSOR: Provider = {
                     (click)="switchView()">
           {{ _monthFormat(monthOpt.original.time) }}
           <ion-icon class="arrow-dropdown"
-                    [name]="_view === 'days' ? 'md-arrow-dropdown' : 'md-arrow-dropup'"></ion-icon>
+                    [name]="_view === 'days' ? 'podium-icon-arrow-down' : 'podium-icon-arrow-up'"></ion-icon>
         </ion-button>
       </ng-template>
       <ng-template #title>
@@ -46,10 +46,10 @@ export const ION_CAL_VALUE_ACCESSOR: Provider = {
       </ng-template>
       <ng-template [ngIf]="_showToggleButtons">
         <ion-button type="button" fill="clear" class="back" [disabled]="!canBack()" (click)="prev()">
-          <ion-icon slot="icon-only" size="small" name="ios-arrow-back"></ion-icon>
+          <ion-icon slot="icon-only" size="small" name="podium-icon-arrow-left"></ion-icon>
         </ion-button>
         <ion-button type="button" fill="clear" class="forward" [disabled]="!canNext()" (click)="next()">
-          <ion-icon slot="icon-only" size="small" name="ios-arrow-forward"></ion-icon>
+          <ion-icon slot="icon-only" size="small" name="podium-icon-arrow-right"></ion-icon>
         </ion-button>
       </ng-template>
     </div>
@@ -275,6 +275,7 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
   }
 
   swipeEvent($event: any): void {
+    console.log(`[PodiumCalendar]: Swipe event detected`, $event);
     const isNext = $event.deltaX < 0;
     if (isNext && this.canNext()) {
       this.nextMonth();

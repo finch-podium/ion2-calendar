@@ -7,7 +7,7 @@
   "scripts": {
     "prepare": "npm run build",
     "start": "cd ./dev && npm start",
-    "clean:dist": " del -Force -Recurse 'dist'",
+    "clean:dist": "del -Force -Recurse 'dist'",
     "demo:link": "npm link && cd ./demo && npm link ion2-calendar",
     "demo:serve": "cd ./demo && ionic serve",
     "build": "run-s clean:dist build:copy-sources build:compile-scss build:ts",

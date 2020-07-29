@@ -171,7 +171,10 @@ export class CalendarService {
       disable: _disable,
       isFirst: date.date() === 1,
       isLast: date.date() === date.daysInMonth(),
-      tags: dayConfig ? dayConfig.tags : ['none']
+      tags: dayConfig ? dayConfig.tags : ['one', 'two', 'three'],
+      availabilities: dayConfig ? dayConfig.availabilities : [],
+      sessions: dayConfig ? dayConfig.sessions : [],
+      sessionHosts: dayConfig ? dayConfig.sessionHosts : [],
     };
   }
 

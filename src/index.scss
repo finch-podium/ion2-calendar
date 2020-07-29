@@ -3,6 +3,24 @@
   width: 100%;
   --size: 100%;
   --border: 4px; }
+  :host svg {
+    width: var(--size);
+    height: var(--size);
+    transform: rotate(-90deg);
+    background: yellowgreen;
+    border-radius: 50%; }
+  :host circle {
+    fill: yellowgreen;
+    stroke: #655;
+    stroke-width: 32;
+    stroke-dasharray: 38 100;
+    /* for 38% */ }
+    :host circle + circle {
+      fill: yellowgreen;
+      stroke: #655;
+      stroke-width: 32;
+      stroke-dasharray: 38 100;
+      /* for 38% */ }
   :host .tag-border {
     height: var(--size);
     width: var(--size);

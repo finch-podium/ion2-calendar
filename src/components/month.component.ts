@@ -31,8 +31,10 @@ export const MONTH_VALUE_ACCESSOR: any = {
                         [disabled]="day.disable"
                         [attr.aria-label]="getDayLabel(day) | date:DAY_DATE_FORMAT">
                         <div class="tag-border" [ngClass]="getDayTags(day)">
-                        <p>{{ day.title }}</p>
-                        <small *ngIf="day.subTitle">{{ day?.subTitle }}</small>
+                        <svg viewBox="0 0 32 32">
+                        <circle *ngFor="let tag of getDayTags(day) " r="16" cx="16" cy="16" />
+                      </svg>
+
                       </div>       
                 </button>
               </ng-container>
@@ -65,8 +67,9 @@ export const MONTH_VALUE_ACCESSOR: any = {
                         <div 
                         class="tag-border"
                         [ngClass]="getDayTags(day)">
-                        <p>{{ day.title }}</p>
-                        <small *ngIf="day.subTitle">{{ day?.subTitle }}</small>
+                        <svg viewBox="0 0 32 32">
+                          <circle *ngFor="let tag of getDayTags(day) " r="16" cx="16" cy="16" />
+                        </svg>
                       </div>         
                 </button>
               </ng-container>
@@ -154,7 +157,7 @@ export class MonthComponent implements ControlValueAccessor, AfterViewInit {
   }
 
   getDayTags(day: any){
-    return (day.tags || []).join(' day-tag-');
+    return (day.tags || []).map((x: string) => 'day-tag-' + `${x}`);
   }
 
   isBetween(day: CalendarDay): boolean {
