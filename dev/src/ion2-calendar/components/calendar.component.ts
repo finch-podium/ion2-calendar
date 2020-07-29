@@ -46,10 +46,10 @@ export const ION_CAL_VALUE_ACCESSOR: Provider = {
       </ng-template>
       <ng-template [ngIf]="_showToggleButtons">
         <ion-button type="button" fill="clear" class="back" [disabled]="!canBack()" (click)="prev()">
-          <ion-icon slot="icon-only" size="small" name="ios-arrow-back"></ion-icon>
+          <ion-icon slot="icon-only" size="small" name="podium-icon-arrow-left"></ion-icon>
         </ion-button>
         <ion-button type="button" fill="clear" class="forward" [disabled]="!canNext()" (click)="next()">
-          <ion-icon slot="icon-only" size="small" name="ios-arrow-forward"></ion-icon>
+          <ion-icon slot="icon-only" size="small" name="podium-icon-arrow-right"></ion-icon>
         </ion-button>
       </ng-template>
     </div>
