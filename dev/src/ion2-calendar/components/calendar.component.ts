@@ -38,10 +38,10 @@ export const ION_CAL_VALUE_ACCESSOR: Provider = {
                     class="switch-btn"
                     [attr.aria-label]="getDate(monthOpt.original.time) | date:MONTH_DATE_FORMAT"
                     (click)="switchView()">
-          {{ _monthFormat(monthOpt.original.time) }}
-          <ion-icon class="arrow-dropdown"
-                    [name]="_view === 'days' ? 'podium-icon-arrow-down' : 'podium-icon-arrow-up'"></ion-icon>
-        </ion-button>
+          {{ _monthFormat(monthOpt.original.time) }}`
+          // <ion-icon class="arrow-dropdown"
+          //           [name]="_view === 'days' ? 'podium-icon-arrow-down' : 'podium-icon-arrow-up'"></ion-icon>
+        + `</ion-button>
       </ng-template>
       <ng-template #title>
         <div class="switch-btn"
