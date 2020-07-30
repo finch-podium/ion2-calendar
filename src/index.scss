@@ -6,21 +6,1060 @@
   :host svg {
     width: var(--size);
     height: var(--size);
+    background: transparent;
+    border-radius: 50%;
     transform: rotate(-90deg);
-    background: yellowgreen;
-    border-radius: 50%; }
-  :host circle {
-    fill: yellowgreen;
-    stroke: #655;
-    stroke-width: 32;
-    stroke-dasharray: 38 100;
-    /* for 38% */ }
-    :host circle + circle {
-      fill: yellowgreen;
-      stroke: #655;
-      stroke-width: 32;
-      stroke-dasharray: 38 100;
-      /* for 38% */ }
+    position: absolute; }
+  :host .segments-1 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 100 100;
+    stroke-dashoffset: 0; }
+  :host .segments-2 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 50 100;
+    stroke-dashoffset: 0; }
+  :host .segments-2 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 50 100;
+    stroke-dashoffset: -50; }
+  :host .segments-3 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 33.33333 100;
+    stroke-dashoffset: 0; }
+  :host .segments-3 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 33.33333 100;
+    stroke-dashoffset: -33.33333; }
+  :host .segments-3 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 33.33333 100;
+    stroke-dashoffset: -66.66667; }
+  :host .segments-4 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 25 100;
+    stroke-dashoffset: 0; }
+  :host .segments-4 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 25 100;
+    stroke-dashoffset: -25; }
+  :host .segments-4 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 25 100;
+    stroke-dashoffset: -50; }
+  :host .segments-4 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 25 100;
+    stroke-dashoffset: -75; }
+  :host .segments-5 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 20 100;
+    stroke-dashoffset: 0; }
+  :host .segments-5 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 20 100;
+    stroke-dashoffset: -20; }
+  :host .segments-5 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 20 100;
+    stroke-dashoffset: -40; }
+  :host .segments-5 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 20 100;
+    stroke-dashoffset: -60; }
+  :host .segments-5 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 20 100;
+    stroke-dashoffset: -80; }
+  :host .segments-6 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 16.66667 100;
+    stroke-dashoffset: 0; }
+  :host .segments-6 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 16.66667 100;
+    stroke-dashoffset: -16.66667; }
+  :host .segments-6 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 16.66667 100;
+    stroke-dashoffset: -33.33333; }
+  :host .segments-6 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 16.66667 100;
+    stroke-dashoffset: -50; }
+  :host .segments-6 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 16.66667 100;
+    stroke-dashoffset: -66.66667; }
+  :host .segments-6 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 16.66667 100;
+    stroke-dashoffset: -83.33333; }
+  :host .segments-7 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 14.28571 100;
+    stroke-dashoffset: 0; }
+  :host .segments-7 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 14.28571 100;
+    stroke-dashoffset: -14.28571; }
+  :host .segments-7 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 14.28571 100;
+    stroke-dashoffset: -28.57143; }
+  :host .segments-7 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 14.28571 100;
+    stroke-dashoffset: -42.85714; }
+  :host .segments-7 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 14.28571 100;
+    stroke-dashoffset: -57.14286; }
+  :host .segments-7 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 14.28571 100;
+    stroke-dashoffset: -71.42857; }
+  :host .segments-7 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 14.28571 100;
+    stroke-dashoffset: -85.71429; }
+  :host .segments-8 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 12.5 100;
+    stroke-dashoffset: 0; }
+  :host .segments-8 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 12.5 100;
+    stroke-dashoffset: -12.5; }
+  :host .segments-8 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 12.5 100;
+    stroke-dashoffset: -25; }
+  :host .segments-8 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 12.5 100;
+    stroke-dashoffset: -37.5; }
+  :host .segments-8 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 12.5 100;
+    stroke-dashoffset: -50; }
+  :host .segments-8 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 12.5 100;
+    stroke-dashoffset: -62.5; }
+  :host .segments-8 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 12.5 100;
+    stroke-dashoffset: -75; }
+  :host .segments-8 circle:nth-child(8) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 12.5 100;
+    stroke-dashoffset: -87.5; }
+  :host .segments-9 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 11.11111 100;
+    stroke-dashoffset: 0; }
+  :host .segments-9 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 11.11111 100;
+    stroke-dashoffset: -11.11111; }
+  :host .segments-9 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 11.11111 100;
+    stroke-dashoffset: -22.22222; }
+  :host .segments-9 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 11.11111 100;
+    stroke-dashoffset: -33.33333; }
+  :host .segments-9 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 11.11111 100;
+    stroke-dashoffset: -44.44444; }
+  :host .segments-9 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 11.11111 100;
+    stroke-dashoffset: -55.55556; }
+  :host .segments-9 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 11.11111 100;
+    stroke-dashoffset: -66.66667; }
+  :host .segments-9 circle:nth-child(8) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 11.11111 100;
+    stroke-dashoffset: -77.77778; }
+  :host .segments-9 circle:nth-child(9) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 11.11111 100;
+    stroke-dashoffset: -88.88889; }
+  :host .segments-10 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 10 100;
+    stroke-dashoffset: 0; }
+  :host .segments-10 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 10 100;
+    stroke-dashoffset: -10; }
+  :host .segments-10 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 10 100;
+    stroke-dashoffset: -20; }
+  :host .segments-10 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 10 100;
+    stroke-dashoffset: -30; }
+  :host .segments-10 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 10 100;
+    stroke-dashoffset: -40; }
+  :host .segments-10 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 10 100;
+    stroke-dashoffset: -50; }
+  :host .segments-10 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 10 100;
+    stroke-dashoffset: -60; }
+  :host .segments-10 circle:nth-child(8) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 10 100;
+    stroke-dashoffset: -70; }
+  :host .segments-10 circle:nth-child(9) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 10 100;
+    stroke-dashoffset: -80; }
+  :host .segments-10 circle:nth-child(10) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 10 100;
+    stroke-dashoffset: -90; }
+  :host .segments-11 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 9.09091 100;
+    stroke-dashoffset: 0; }
+  :host .segments-11 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 9.09091 100;
+    stroke-dashoffset: -9.09091; }
+  :host .segments-11 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 9.09091 100;
+    stroke-dashoffset: -18.18182; }
+  :host .segments-11 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 9.09091 100;
+    stroke-dashoffset: -27.27273; }
+  :host .segments-11 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 9.09091 100;
+    stroke-dashoffset: -36.36364; }
+  :host .segments-11 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 9.09091 100;
+    stroke-dashoffset: -45.45455; }
+  :host .segments-11 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 9.09091 100;
+    stroke-dashoffset: -54.54545; }
+  :host .segments-11 circle:nth-child(8) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 9.09091 100;
+    stroke-dashoffset: -63.63636; }
+  :host .segments-11 circle:nth-child(9) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 9.09091 100;
+    stroke-dashoffset: -72.72727; }
+  :host .segments-11 circle:nth-child(10) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 9.09091 100;
+    stroke-dashoffset: -81.81818; }
+  :host .segments-11 circle:nth-child(11) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 9.09091 100;
+    stroke-dashoffset: -90.90909; }
+  :host .segments-12 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 8.33333 100;
+    stroke-dashoffset: 0; }
+  :host .segments-12 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 8.33333 100;
+    stroke-dashoffset: -8.33333; }
+  :host .segments-12 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 8.33333 100;
+    stroke-dashoffset: -16.66667; }
+  :host .segments-12 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 8.33333 100;
+    stroke-dashoffset: -25; }
+  :host .segments-12 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 8.33333 100;
+    stroke-dashoffset: -33.33333; }
+  :host .segments-12 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 8.33333 100;
+    stroke-dashoffset: -41.66667; }
+  :host .segments-12 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 8.33333 100;
+    stroke-dashoffset: -50; }
+  :host .segments-12 circle:nth-child(8) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 8.33333 100;
+    stroke-dashoffset: -58.33333; }
+  :host .segments-12 circle:nth-child(9) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 8.33333 100;
+    stroke-dashoffset: -66.66667; }
+  :host .segments-12 circle:nth-child(10) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 8.33333 100;
+    stroke-dashoffset: -75; }
+  :host .segments-12 circle:nth-child(11) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 8.33333 100;
+    stroke-dashoffset: -83.33333; }
+  :host .segments-12 circle:nth-child(12) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 8.33333 100;
+    stroke-dashoffset: -91.66667; }
+  :host .segments-13 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.69231 100;
+    stroke-dashoffset: 0; }
+  :host .segments-13 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.69231 100;
+    stroke-dashoffset: -7.69231; }
+  :host .segments-13 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.69231 100;
+    stroke-dashoffset: -15.38462; }
+  :host .segments-13 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.69231 100;
+    stroke-dashoffset: -23.07692; }
+  :host .segments-13 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.69231 100;
+    stroke-dashoffset: -30.76923; }
+  :host .segments-13 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.69231 100;
+    stroke-dashoffset: -38.46154; }
+  :host .segments-13 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.69231 100;
+    stroke-dashoffset: -46.15385; }
+  :host .segments-13 circle:nth-child(8) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.69231 100;
+    stroke-dashoffset: -53.84615; }
+  :host .segments-13 circle:nth-child(9) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.69231 100;
+    stroke-dashoffset: -61.53846; }
+  :host .segments-13 circle:nth-child(10) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.69231 100;
+    stroke-dashoffset: -69.23077; }
+  :host .segments-13 circle:nth-child(11) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.69231 100;
+    stroke-dashoffset: -76.92308; }
+  :host .segments-13 circle:nth-child(12) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.69231 100;
+    stroke-dashoffset: -84.61538; }
+  :host .segments-13 circle:nth-child(13) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.69231 100;
+    stroke-dashoffset: -92.30769; }
+  :host .segments-14 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: 0; }
+  :host .segments-14 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: -7.14286; }
+  :host .segments-14 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: -14.28571; }
+  :host .segments-14 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: -21.42857; }
+  :host .segments-14 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: -28.57143; }
+  :host .segments-14 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: -35.71429; }
+  :host .segments-14 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: -42.85714; }
+  :host .segments-14 circle:nth-child(8) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: -50; }
+  :host .segments-14 circle:nth-child(9) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: -57.14286; }
+  :host .segments-14 circle:nth-child(10) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: -64.28571; }
+  :host .segments-14 circle:nth-child(11) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: -71.42857; }
+  :host .segments-14 circle:nth-child(12) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: -78.57143; }
+  :host .segments-14 circle:nth-child(13) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: -85.71429; }
+  :host .segments-14 circle:nth-child(14) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 7.14286 100;
+    stroke-dashoffset: -92.85714; }
+  :host .segments-15 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: 0; }
+  :host .segments-15 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -6.66667; }
+  :host .segments-15 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -13.33333; }
+  :host .segments-15 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -20; }
+  :host .segments-15 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -26.66667; }
+  :host .segments-15 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -33.33333; }
+  :host .segments-15 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -40; }
+  :host .segments-15 circle:nth-child(8) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -46.66667; }
+  :host .segments-15 circle:nth-child(9) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -53.33333; }
+  :host .segments-15 circle:nth-child(10) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -60; }
+  :host .segments-15 circle:nth-child(11) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -66.66667; }
+  :host .segments-15 circle:nth-child(12) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -73.33333; }
+  :host .segments-15 circle:nth-child(13) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -80; }
+  :host .segments-15 circle:nth-child(14) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -86.66667; }
+  :host .segments-15 circle:nth-child(15) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.66667 100;
+    stroke-dashoffset: -93.33333; }
+  :host .segments-16 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: 0; }
+  :host .segments-16 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -6.25; }
+  :host .segments-16 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -12.5; }
+  :host .segments-16 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -18.75; }
+  :host .segments-16 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -25; }
+  :host .segments-16 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -31.25; }
+  :host .segments-16 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -37.5; }
+  :host .segments-16 circle:nth-child(8) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -43.75; }
+  :host .segments-16 circle:nth-child(9) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -50; }
+  :host .segments-16 circle:nth-child(10) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -56.25; }
+  :host .segments-16 circle:nth-child(11) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -62.5; }
+  :host .segments-16 circle:nth-child(12) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -68.75; }
+  :host .segments-16 circle:nth-child(13) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -75; }
+  :host .segments-16 circle:nth-child(14) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -81.25; }
+  :host .segments-16 circle:nth-child(15) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -87.5; }
+  :host .segments-16 circle:nth-child(16) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 6.25 100;
+    stroke-dashoffset: -93.75; }
+  :host .segments-17 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: 0; }
+  :host .segments-17 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -5.88235; }
+  :host .segments-17 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -11.76471; }
+  :host .segments-17 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -17.64706; }
+  :host .segments-17 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -23.52941; }
+  :host .segments-17 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -29.41176; }
+  :host .segments-17 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -35.29412; }
+  :host .segments-17 circle:nth-child(8) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -41.17647; }
+  :host .segments-17 circle:nth-child(9) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -47.05882; }
+  :host .segments-17 circle:nth-child(10) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -52.94118; }
+  :host .segments-17 circle:nth-child(11) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -58.82353; }
+  :host .segments-17 circle:nth-child(12) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -64.70588; }
+  :host .segments-17 circle:nth-child(13) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -70.58824; }
+  :host .segments-17 circle:nth-child(14) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -76.47059; }
+  :host .segments-17 circle:nth-child(15) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -82.35294; }
+  :host .segments-17 circle:nth-child(16) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -88.23529; }
+  :host .segments-17 circle:nth-child(17) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.88235 100;
+    stroke-dashoffset: -94.11765; }
+  :host .segments-18 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: 0; }
+  :host .segments-18 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -5.55556; }
+  :host .segments-18 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -11.11111; }
+  :host .segments-18 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -16.66667; }
+  :host .segments-18 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -22.22222; }
+  :host .segments-18 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -27.77778; }
+  :host .segments-18 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -33.33333; }
+  :host .segments-18 circle:nth-child(8) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -38.88889; }
+  :host .segments-18 circle:nth-child(9) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -44.44444; }
+  :host .segments-18 circle:nth-child(10) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -50; }
+  :host .segments-18 circle:nth-child(11) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -55.55556; }
+  :host .segments-18 circle:nth-child(12) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -61.11111; }
+  :host .segments-18 circle:nth-child(13) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -66.66667; }
+  :host .segments-18 circle:nth-child(14) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -72.22222; }
+  :host .segments-18 circle:nth-child(15) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -77.77778; }
+  :host .segments-18 circle:nth-child(16) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -83.33333; }
+  :host .segments-18 circle:nth-child(17) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -88.88889; }
+  :host .segments-18 circle:nth-child(18) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.55556 100;
+    stroke-dashoffset: -94.44444; }
+  :host .segments-19 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: 0; }
+  :host .segments-19 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -5.26316; }
+  :host .segments-19 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -10.52632; }
+  :host .segments-19 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -15.78947; }
+  :host .segments-19 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -21.05263; }
+  :host .segments-19 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -26.31579; }
+  :host .segments-19 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -31.57895; }
+  :host .segments-19 circle:nth-child(8) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -36.84211; }
+  :host .segments-19 circle:nth-child(9) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -42.10526; }
+  :host .segments-19 circle:nth-child(10) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -47.36842; }
+  :host .segments-19 circle:nth-child(11) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -52.63158; }
+  :host .segments-19 circle:nth-child(12) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -57.89474; }
+  :host .segments-19 circle:nth-child(13) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -63.15789; }
+  :host .segments-19 circle:nth-child(14) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -68.42105; }
+  :host .segments-19 circle:nth-child(15) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -73.68421; }
+  :host .segments-19 circle:nth-child(16) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -78.94737; }
+  :host .segments-19 circle:nth-child(17) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -84.21053; }
+  :host .segments-19 circle:nth-child(18) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -89.47368; }
+  :host .segments-19 circle:nth-child(19) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5.26316 100;
+    stroke-dashoffset: -94.73684; }
+  :host .segments-20 circle:nth-child(1) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: 0; }
+  :host .segments-20 circle:nth-child(2) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -5; }
+  :host .segments-20 circle:nth-child(3) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -10; }
+  :host .segments-20 circle:nth-child(4) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -15; }
+  :host .segments-20 circle:nth-child(5) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -20; }
+  :host .segments-20 circle:nth-child(6) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -25; }
+  :host .segments-20 circle:nth-child(7) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -30; }
+  :host .segments-20 circle:nth-child(8) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -35; }
+  :host .segments-20 circle:nth-child(9) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -40; }
+  :host .segments-20 circle:nth-child(10) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -45; }
+  :host .segments-20 circle:nth-child(11) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -50; }
+  :host .segments-20 circle:nth-child(12) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -55; }
+  :host .segments-20 circle:nth-child(13) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -60; }
+  :host .segments-20 circle:nth-child(14) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -65; }
+  :host .segments-20 circle:nth-child(15) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -70; }
+  :host .segments-20 circle:nth-child(16) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -75; }
+  :host .segments-20 circle:nth-child(17) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -80; }
+  :host .segments-20 circle:nth-child(18) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -85; }
+  :host .segments-20 circle:nth-child(19) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -90; }
+  :host .segments-20 circle:nth-child(20) {
+    fill: transparent;
+    stroke-width: 0.5rem;
+    stroke-dasharray: 5 100;
+    stroke-dashoffset: -95; }
   :host .tag-border {
     height: var(--size);
     width: var(--size);
@@ -78,7 +1117,8 @@
     margin: 0;
     font-size: 1.2em;
     color: #333;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
   :host button.days-btn[disabled] p {
     color: rgba(0, 0, 0, 0.25); }
   :host button.days-btn.on-selected small {
@@ -948,9 +1988,6 @@
     :host .title .back,
     :host .title .forward,
     :host .title .switch-btn {
-      display: block;
-      position: relative;
-      float: left;
       min-height: 32px;
       margin: 0;
       padding: 0;
@@ -960,20 +1997,11 @@
     :host .title .back,
     :host .title .forward {
       color: #757575; }
-    :host .title .back {
-      margin-left: -100%;
-      left: -40px;
-      width: 40px; }
-    :host .title .forward {
-      margin-left: -40px;
-      right: -40px;
-      width: 40px; }
     :host .title .switch-btn {
       --margin-top: 0;
       --margin-bottom: 0;
       --margin-start: auto;
       --margin-end: auto;
-      width: 100%;
       text-align: center;
       line-height: 32px;
       color: #757575; }

@@ -69,7 +69,9 @@ export const MONTH_VALUE_ACCESSOR: any = {
                         class="tag-border"
                         [ngClass]="getDayTags(day)">
                         <svg viewBox="0 0 32 32">
+
                           <circle *ngFor="let tag of getDayTags(day) " r="16" cx="16" cy="16" />
+                          
                         </svg>
                       </div>         
                 </button>

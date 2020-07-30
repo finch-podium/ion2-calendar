@@ -14,9 +14,7 @@
     .back,
     .forward,
     .switch-btn {
-      display: block;
-      position: relative;
-      float: left;
+
       min-height: 32px;
       margin: 0;
       padding: 0;
@@ -30,17 +28,7 @@
       color: #757575;
     }
 
-    .back {
-      margin-left: -100%;
-      left: -$btn-width;
-      width: $btn-width;
-    }
 
-    .forward {
-      margin-left: -$btn-width;
-      right: -$btn-width;
-      width: $btn-width;
-    }
 
     .switch-btn {
       --margin-top: 0;
@@ -48,7 +36,6 @@
       --margin-start: auto;
       --margin-end: auto;
 
-      width: 100%;
       text-align: center;
       line-height: 32px;
       color: #757575;
