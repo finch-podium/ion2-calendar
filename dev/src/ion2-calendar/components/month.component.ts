@@ -36,7 +36,6 @@ export const MONTH_VALUE_ACCESSOR: any = {
                         </svg>
                         <p>{{ day.title }}</p>
                         <small *ngIf="day.subTitle">{{ day?.subTitle }}</small>
-
                       </div>       
                 </button>
               </ng-container>
