@@ -27,6 +27,11 @@ export const ION_CAL_VALUE_ACCESSOR: Provider = {
   styleUrls: ['./calendar.component.scss'],
   template: `
     <div class="title d-flex justify-content-center">
+    <ng-template [ngIf]="_showToggleButtons">
+        <ion-button type="button" fill="clear" class="back" [disabled]="!canBack()" (click)="prev()">
+        <ion-icon slot="icon-only" size="small" name="podium-icon-arrow-left"></ion-icon>
+      </ion-button>
+    </ng-template>
       <ng-template [ngIf]="_showMonthPicker" [ngIfElse]="title">
         <ion-button type="button"
                     fill="clear"
@@ -45,9 +50,6 @@ export const ION_CAL_VALUE_ACCESSOR: Provider = {
         </div>
       </ng-template>
       <ng-template [ngIf]="_showToggleButtons">
-        <ion-button type="button" fill="clear" class="back" [disabled]="!canBack()" (click)="prev()">
-          <ion-icon slot="icon-only" size="small" name="podium-icon-arrow-left"></ion-icon>
-        </ion-button>
         <ion-button type="button" fill="clear" class="forward" [disabled]="!canNext()" (click)="next()">
           <ion-icon slot="icon-only" size="small" name="podium-icon-arrow-right"></ion-icon>
         </ion-button>
@@ -140,7 +142,7 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
 
   readonly MONTH_DATE_FORMAT = 'MMMM yyyy';
 
-  constructor(public calSvc: CalendarService) {}
+  constructor(public calSvc: CalendarService) { }
 
   ngOnInit(): void {
     this.initOpt();
@@ -284,9 +286,9 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
     }
   }
 
-  _onChanged: Function = () => {};
+  _onChanged: Function = () => { };
 
-  _onTouched: Function = () => {};
+  _onTouched: Function = () => { };
 
   _payloadToTimeNumber(value: CalendarComponentPayloadTypes): number {
     let date;

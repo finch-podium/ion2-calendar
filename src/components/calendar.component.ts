@@ -27,6 +27,11 @@ export const ION_CAL_VALUE_ACCESSOR: Provider = {
   styleUrls: ['./calendar.component.scss'],
   template: `
     <div class="title">
+    <ng-template [ngIf]="_showToggleButtons">
+      <ion-button type="button" fill="clear" class="back" [disabled]="!canBack()" (click)="prev()">
+        <ion-icon slot="icon-only" size="small" name="podium-icon-arrow-left"></ion-icon>
+      </ion-button>
+    </ng-template>
       <ng-template [ngIf]="_showMonthPicker" [ngIfElse]="title">
         <ion-button type="button"
                     fill="clear"
@@ -45,9 +50,6 @@ export const ION_CAL_VALUE_ACCESSOR: Provider = {
         </div>
       </ng-template>
       <ng-template [ngIf]="_showToggleButtons">
-        <ion-button type="button" fill="clear" class="back" [disabled]="!canBack()" (click)="prev()">
-          <ion-icon slot="icon-only" size="small" name="podium-icon-arrow-left"></ion-icon>
-        </ion-button>
         <ion-button type="button" fill="clear" class="forward" [disabled]="!canNext()" (click)="next()">
           <ion-icon slot="icon-only" size="small" name="podium-icon-arrow-right"></ion-icon>
         </ion-button>
