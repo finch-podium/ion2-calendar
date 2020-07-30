@@ -26,7 +26,7 @@ export const ION_CAL_VALUE_ACCESSOR: Provider = {
   providers: [ION_CAL_VALUE_ACCESSOR],
   styleUrls: ['./calendar.component.scss'],
   template: `
-    <div class="title d-flex justify-content-center">
+    <div class="title d-flex justify-content-around">
     <ng-template [ngIf]="_showToggleButtons">
         <ion-button type="button" fill="clear" class="back" [disabled]="!canBack()" (click)="prev()">
         <ion-icon slot="icon-only" size="small" name="podium-icon-arrow-left"></ion-icon>
